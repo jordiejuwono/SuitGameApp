@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SuitGame</string>
+    <string name="tv_batu">BATU</string>
+    <string name="tv_gunting">GUNTING</string>
+    <string name="tv_kertas">KERTAS</string>
+    <string name="tv_player_score">0</string>
+    <string name="tv_score">SCORE</string>
+    <string name="tv_com_score">0</string>
+    <string name="tv_player">Player 1</string>
+    <string name="tv_com">Com</string>
+    <string name="text_result_draw">DRAW!</string>
+    <string name="text_result_player_win">PLAYER WINS!</string>
+    <string name="text_result_com_win">COM WINS!</string>
+    <string name="tv_vs">VS</string>
+    <string name="text_game_over">GAME OVER</string>
+    <string name="text_com_wins">COM WINS!</string>
+    <string name="text_you_win">YOU WIN!</string>
+    <string name="tv_title_tutorial">GAME TUTORIAL</string>
+    <string name="tv_winning_condition">Winning Condition:</string>
+    <string name="tv_winning_score">Score 3 first to win the game.</string>
+    <string name="tv_rules">Rules:</string>
+    <string name="tv_beats">Beats</string>
+    <string name="tv_got_it">Ok, Got It!</string>
+    <string name="tv_winner_player">PLAYER 1 WINS!</string>
+    <string name="tv_winner_com">COMPUTER WINS!</string>
+    <string name="tv_play_again">Play Again</string>
+    <string name="tv_dismiss">Dismiss</string>
+</resources>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GameActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_wallpaper"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_title"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_r"
+            style="@style/Text.25.middle_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv_batu"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_p"
+            style="@style/Text.25.middle_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv_gunting"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_r">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_s"
+            style="@style/Text.25.middle_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_kertas"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_p">
+
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_player_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/font_vt323"
+        android:text="@string/tv_player_score"
+        android:textColor="@color/dark_blue"
+        android:paddingBottom="@dimen/_3sdp"
+        android:textSize="@dimen/_40ssp"
+        app:layout_constraintBottom_toTopOf="@id/tv_player"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:textAlignment="center"
+        android:layout_width="@dimen/_180sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_vt323"
+        android:text="@string/tv_score"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_40ssp"
+        app:layout_constraintBottom_toTopOf="@id/tv_player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_com_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/font_vt323"
+        android:text="@string/tv_com_score"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_40ssp"
+        app:layout_constraintBottom_toTopOf="@id/tv_com"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/font_vt323"
+        android:text="@string/tv_player"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_21ssp"
+        app:layout_constraintBottom_toTopOf="@id/ll_hands"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/font_vt323"
+        android:text="@string/tv_com"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_24ssp"
+        app:layout_constraintBottom_toTopOf="@id/ll_hands"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_hands"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/bg_player_com_hand">
+
+            <ImageView
+                android:id="@+id/iv_player_hand"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_question_mark" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_vs"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp">
+
+            <TextView
+                android:id="@+id/tv_vs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/press_start_2p"
+                android:text="@string/tv_vs"
+                android:lineHeight="@dimen/_16sdp"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/_12ssp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/bg_player_com_hand">
+
+            <ImageView
+                android:id="@+id/iv_com_hand"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_question_mark" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_choices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/ll_hands"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fl_rock"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@drawable/bg_bottom_right_shadow">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:src="@drawable/batu" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_scissors"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/bg_bottom_right_shadow">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gunting" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_paper"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/bg_bottom_right_shadow">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:src="@drawable/kertas" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tv_instructions"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:src="@drawable/ic_instructions"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:fontFamily="@font/font_vt323"
+        android:textSize="@dimen/_22ssp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_reset"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

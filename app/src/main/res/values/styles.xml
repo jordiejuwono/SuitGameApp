@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text.25" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/_25ssp</item>
+        <item name="fontFamily">@font/press_start_2p</item>
+    </style>
+
+    <style name="Text.25.middle_blue" parent="Text.25">
+        <item name="android:textColor">@color/middle_blue</item>
+    </style>
+</resources>

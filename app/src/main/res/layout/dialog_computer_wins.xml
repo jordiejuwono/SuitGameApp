@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_450sdp"
+        android:background="@drawable/bg_wallpaper"/>
+
+    <ImageView
+        android:id="@+id/iv_winner"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:src="@drawable/ic_winner"/>
+
+    <TextView
+        android:id="@+id/tv_winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/press_start_2p"
+        android:textColor="@color/dark_blue"
+        android:text="@string/tv_winner_com"
+        app:layout_constraintTop_toBottomOf="@id/iv_winner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/_18ssp"/>
+
+    <TextView
+        android:id="@+id/tv_play_again"
+        app:layout_constraintTop_toBottomOf="@id/tv_winner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/font_vt323"
+        android:textSize="@dimen/_20ssp"
+        android:background="@drawable/bg_play_again"
+        android:textColor="@color/white"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_play_again"/>
+
+    <TextView
+        android:id="@+id/tv_dismiss"
+        app:layout_constraintTop_toBottomOf="@id/tv_play_again"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/font_vt323"
+        android:textSize="@dimen/_20ssp"
+        android:background="@drawable/bg_bottom_right_shadow"
+        android:textColor="@color/white"
+        android:paddingHorizontal="@dimen/_28sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_dismiss"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

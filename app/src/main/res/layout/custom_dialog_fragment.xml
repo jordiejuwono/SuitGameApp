@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_450sdp"
+        android:background="@drawable/bg_wallpaper"/>
+
+    <TextView
+        android:id="@+id/tv_tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_title_tutorial"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_16sdp"
+        android:paddingTop="@dimen/_13sdp"
+        android:fontFamily="@font/press_start_2p"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/dark_blue"
+        android:background="@drawable/bg_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_winning_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_vt323"
+        android:textColor="@color/dark_blue"
+        android:layout_marginTop="@dimen/_20ssp"
+        android:text="@string/tv_winning_condition"
+        android:textSize="@dimen/_24ssp"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tutorial"/>
+
+    <TextView
+        android:id="@+id/tv_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/tv_winning_score"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/dark_blue"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/font_vt323"
+        app:layout_constraintTop_toBottomOf="@id/tv_winning_condition"/>
+
+    <TextView
+        android:id="@+id/tv_rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/tv_rules"
+        android:fontFamily="@font/font_vt323"
+        android:textColor="@color/dark_blue"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:textSize="@dimen/_24ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_condition"/>
+
+    <LinearLayout
+        android:id="@+id/ll_rbs"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_rules"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:src="@drawable/batu"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <TextView
+            android:text="@string/tv_beats"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/font_vt323"
+            android:textSize="@dimen/_20ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/gunting"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sbp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ll_rbs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:src="@drawable/gunting"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <TextView
+            android:text="@string/tv_beats"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/font_vt323"
+            android:textSize="@dimen/_20ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/kertas"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pbr"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ll_sbp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:src="@drawable/kertas"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <TextView
+            android:text="@string/tv_beats"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/font_vt323"
+            android:textSize="@dimen/_20ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/batu"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_got_it"
+        app:layout_constraintTop_toBottomOf="@id/ll_pbr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/font_vt323"
+        android:textSize="@dimen/_20ssp"
+        android:background="@drawable/bg_bottom_right_shadow"
+        android:textColor="@color/white"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_got_it"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
